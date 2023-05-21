@@ -1,38 +1,255 @@
+body {
+  background-color: #d6d1ec;
+}
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.inp button {
+  outline: none;
+  height: 35px;
+  margin: 7px;
+  margin-left: 120px;
+  border-radius: 14px;
+  width: 80px;
+  border: 2px solid #a08aff;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #fff;
+  color: #a08aff;
+}
+.inp button:active {
+  background-color: #a08aff;
+  color: #fff;
+}
+.display1 {
+  margin-top: 15px;
+  padding: 1px;
+  border-radius: 30px;
+  width: 250px;
+  margin-left: 20px;
+  background-color: #fd99af2b;
+}
+.display2 {
+  margin-top: 15px;
+  padding: 1px;
+  border-radius: 30px;
+  width: 250px;
+  margin-left: 20px;
+  background-color: #fac5082a;
+}
+.display3 {
+  margin-top: 15px;
+  padding: 1px;
+  border-radius: 30px;
+  width: 250px;
+  margin-left: 20px;
+  background-color: #40d3f436;
+}
+.display {
+  line-height: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.display1 h1 {
+  color: #fd99ae;
+  font-size: 100px;
+}
+.display2 h1 {
+  color: #fac608;
+  font-size: 100px;
+}
+.display3 h1 {
+  color: #40d4f4;
+  font-size: 100px;
+}
+.display h2 {
+  color: #a08aff;
+  font-family: "Orbitron", sans-serif;
+}
+.dot {
+  line-height: 1px;
+  display: flex;
+  width: 60px;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15px;
+}
+.scroll {
+  overflow-y: scroll;
+  height: 450px;
+  margin-top: 20px;
+}
+.scroll::-webkit-scrollbar {
+  width: 5px;
+}
+.scroll::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+.scroll::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 6px rgb(34, 136, 225);
+}
+.dot-1 {
+  margin-left: 20px;
+  width: 15px;
+  height: 15px;
+  border-radius: 8px;
+  background-color: #fd99ae;
+}
+.dot-2 {
+  margin-left: 20px;
+  width: 15px;
+  height: 15px;
+  border-radius: 8px;
+  background-color: #40d4f4;
+}
+.dot-3 {
+  margin-left: 20px;
+  width: 15px;
+  height: 15px;
+  border-radius: 8px;
+  background-color: #fac608;
+}
+.dot1 {
+  width: 15px;
+  height: 15px;
+  border-radius: 8px;
+  background-color: #fd99ae;
+}
+.dot2 {
+  width: 15px;
+  height: 15px;
+  border-radius: 8px;
+  background-color: #40d4f4;
+}
+.dot3 {
+  width: 15px;
+  height: 15px;
+  border-radius: 8px;
+  background-color: #fac608;
+}
+.sub {
+  border: solid 8px white;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin-top: 100px;
+  background-color: white;
+  height: 750px;
+  width: 1200px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 20px rgb(215, 215, 215);
+}
+.right {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #a08aff;
+}
+.left-top {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  margin: 15px;
+}
+hr {
+  margin-top: 30px;
+  width: 200px;
+  border-top: 2.5px solid #a08aff;
+}
+.name {
+  text-align: start;
+  line-height: 10px;
+}
+.left-top h2 {
+  font-size: medium;
+  color: #6c6c6c;
+  font-weight: 500;
+  padding-left: 15px;
+}
+.left-top h1 {
+  padding-left: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #a08aff;
+}
+.left-top img {
+  width: 60px;
+  border-radius: 40px;
+}
+.right h2 {
+  text-align: start;
+  font-size: 40px;
+  margin-top: 60px;
+  width: 400px;
+  margin-left: 100px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.right h2 span {
+  text-align: start;
+  font-size: 45px;
+  font-weight: bolder;
+  width: 400px;
+  color: white;
+}
+input {
+  font-weight: bold;
+  color: #6c6c6c;
+  margin-left: 20px;
+  width: 400px;
+  height: 48px;
+  border-radius: 20px;
+  border: none;
+  font-size: 17px;
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo h1 {
+  font-weight: bold;
+  color: #6c6c6c;
+  font-size: medium;
+  padding-left: 30px;
+}
+input::placeholder {
+  font-weight: bolder;
+  color: #c7c7c7;
+}
+.inp {
+  display: flex;
+  background-color: white;
+  width: 700px;
+  height: 50px;
+  margin-left: 100px;
+  border-radius: 20px;
+}
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: white;
+  width: 650px;
+  margin-top: 25px;
+  height: 50px;
+  margin-left: 130px;
+  border-radius: 20px;
+}
+.disp {
+  width: 515px;
+  text-align: start;
+}
+.cbx {
+  margin-left: 60px;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 2px solid #dfdfdf;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+.cbx:checked {
+  background-color: #a08aff;
 }

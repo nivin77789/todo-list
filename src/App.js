@@ -26,8 +26,8 @@ function App() {
           <div className="left-top">
             <img
               alt="nivin"
-              src="https://media.licdn.com/dms/image/D5603AQHznPBcTYwB3A/profile-displayphoto-shrink_800_800/0/1663668177112?e=2147483647&v=beta&t=ITpP07P4ColngHcvYo1GsMPqPONDKjufwVcxmJ_7WLA"
-            />
+              src="https://avatars.githubusercontent.com/nivin77789"
+                />
             <div className="name">
               <h2>Do-it</h2>
               <h1>Nivin Mathew S</h1>
